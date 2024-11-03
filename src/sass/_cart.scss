@@ -1,0 +1,256 @@
+.cart-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.cart-items {
+    width: calc(100% - 370px);
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.cart-heading {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid hsla(0, 0%, 49%, 0.1);
+}
+
+.cart-items-container {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgba(173, 173, 173, 0.105);
+    border-radius: 18px;
+}
+
+.cart-item-left {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.cart-item-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+
+.cart-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cart-item-title {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.5rem !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.cart-item-title:hover {
+    color: #2c7565;
+}
+
+.cart-item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: fit-content;
+}
+
+.cart-trash {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: hsla(0, 80%, 50%, 0.8);
+}
+
+.cart-trash:hover {
+    color: hsla(0, 80%, 50%, 0.6);
+}
+
+.quantity-icons {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.quantity-icons:hover {
+    color: #2c7565;
+}
+
+.cart-item-right button {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #2c7565;
+    border: 1px solid #2c7565;
+    background-color: hsla(163, 30%, 60%, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.cart-item-right button:hover {
+    color: #2da88d;
+    border: 1px solid #2da88d;
+    background-color: hsla(163, 30%, 60%, 0.2);
+}
+
+.checkout {
+    width: 350px;
+    height: 300px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 46px);
+    padding-top: 20px;
+}
+
+.checkout-button button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    color: #2c7565;
+    border: 1px solid #2c7565;
+    background-color: hsla(163, 30%, 60%, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.checkout-button button:hover {
+    color: #2da88d;
+    border: 1px solid #2da88d;
+    background-color: hsla(163, 30%, 60%, 0.2);
+}
+
+.continue-shopping-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #efefef;
+    background-color: hsl(167, 80%, 28%);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.continue-shopping-btn:hover {
+    background-color: hsla(167, 81%, 25%, 0.796);
+}
+
+.orders-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.orders-heading {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid hsla(0, 0%, 49%, 0.1);
+}
+
+.order-table tr,
+th,
+td {
+    padding: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .cart-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cart-items {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cart-item-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cart-item-title {
+        font-size: 1.3rem !important;
+    }
+
+    .cart-item-content div p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .cart-container {
+        padding: 0px 10px;
+    }
+
+    .cart-item-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cart-item-title {
+        font-size: 1rem !important;
+    }
+
+    .cart-item-content div p {
+        font-size: 0.9rem;
+    }
+
+    .cart-item-right button {
+        padding: 3px 8px;
+        font-size: 0.8rem !important;
+    }
+
+    .checkout {
+        width: 100%;
+        height: 250px;
+    }
+}

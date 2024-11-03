@@ -1,0 +1,92 @@
+.pf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 15px;
+    padding-bottom: 75px;
+}
+
+.pf-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    min-height: 400px;
+    padding: 20px;
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.pf-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pf-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    object-fit: cover;
+}
+
+.pf-avatar-icon {
+    font-size: 3rem;
+}
+
+.pf-box input {
+    width: 100%;
+    margin: 8px 0px 15px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.pf-box input:focus {
+    border: 1px solid #39937c;
+}
+
+.pf-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.pf-btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 8px;
+    border-radius: 30px;
+    color: #efefef;
+    background-color: #39937c;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.update-pf-btn:hover {
+    background-color: #1a745e;
+}
+
+.del-btn {
+    background-color: rgba(255, 0, 0, 0.75) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.del-btn:hover {
+    background-color: rgba(255, 0, 0, 0.85) !important;
+}
+
+@media screen and (max-width: 500px) {
+    .pf-box {
+        width: 100%;
+    }
+}

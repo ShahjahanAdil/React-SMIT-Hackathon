@@ -1,0 +1,174 @@
+@import './sass/bootstrap';
+@import './sass/loader';
+@import './sass/header';
+@import './sass/auth';
+@import './sass/admin';
+@import './sass/users';
+@import './sass/cartButton';
+@import './sass/topbar';
+@import './sass/addItems';
+@import './sass/profile';
+@import './sass/home';
+@import './sass/products';
+@import './sass/productDetails';
+@import './sass/cart';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(/assets/fonts/Built.otf);
+    font-family: Built;
+}
+
+@font-face {
+    src: url(/assets/fonts/Lato.ttf);
+    font-family: Lato;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    font-family: Lato, 'arial';
+    background-color: #efefef;
+}
+
+main {
+    min-height: 50vh;
+    flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-family: Built, 'arial';
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0 !important;
+}
+
+button {
+    font-family: Lato, 'arial';
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1rem !important;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 0.9rem !important;
+    }
+
+    .link {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.85rem !important;
+    }
+
+    .link {
+        font-size: 0.85rem !important;
+    }
+}

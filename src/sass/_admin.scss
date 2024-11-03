@@ -1,0 +1,42 @@
+@import '../sass/variables';
+
+.admin-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px 50px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fafafa;
+}
+
+.admin-header .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    color: $fou-color;
+    border: 1px solid $fou-color;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.admin-header .link:hover {
+    color: $fiv-color;
+    border: 1px solid $fiv-color;
+    background-color: #40efba0e;
+}
+
+@media screen and (max-width: 499px) {
+    .admin-header .link {
+        font-size: 3vw !important;
+    }
+}

@@ -1,0 +1,25 @@
+.cart-btn {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    bottom: 40px;
+    padding: 15px;
+    border-radius: 45px / 15px;
+    cursor: pointer;
+    background-color: hsl(162, 71%, 32%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.cart-btn-icon {
+    font-size: 1.4rem;
+    color: #c5feed;
+}
+
+@media screen and (max-width: 499px) {
+    .cart-btn {
+        right: 20px;
+        bottom: 30px;
+    }
+}
